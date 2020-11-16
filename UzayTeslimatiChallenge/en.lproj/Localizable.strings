@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  UzayTeslimatiChallenge
+
+  Created by Fetiye Demircan on 14.11.2020.
+  Copyright © 2020 Fetiye Demircan. All rights reserved.
+*/
+
+"home_title" = "Home";
+"station_title" = "Station";
+"favorites_title" = "Favorites";
+
+"accept" = "Ok";
+"warning" = "Warning";
+"create_spacecraft_alert" = "Select so that the amount of points to be distributed does not exceed 15.";
+
+"ws_error" = "Error";
+"ws_success" = "Success";

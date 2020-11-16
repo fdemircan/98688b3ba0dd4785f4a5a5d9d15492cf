@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Space Craft View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SpaceCraftViewController" customModule="UzayTeslimatiChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-1j-RtX">
+                                <rect key="frame" x="110.5" y="64" width="193.5" height="28.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dağıtılacak Puan :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aI-dz-q2c">
+                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD7-nU-W8u">
+                                        <rect key="frame" x="170.5" y="0.0" width="23" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2p-yk-FrM">
+                                <rect key="frame" x="28" y="100.5" width="358" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="fla-5G-siG"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Uzay Aracı Adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyF-Fz-GSs">
+                                <rect key="frame" x="20" y="142.5" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Eg7-IY-2gu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="Vim-3i-Qgv">
+                                <rect key="frame" x="18" y="259" width="378" height="21"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BRR-I1-0rV"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="durabilitySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="KOl-8r-7wH"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dayanıklılık" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-ZX-iEf">
+                                <rect key="frame" x="20" y="222.5" width="102.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="uFL-dR-fbl">
+                                <rect key="frame" x="18" y="355.5" width="378" height="21"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="KrE-cc-GQe"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="speedSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="cOW-jx-nrN"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hız" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkG-47-Jod">
+                                <rect key="frame" x="20" y="319" width="28.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-h0-rK9">
+                                <rect key="frame" x="18" y="452" width="378" height="21"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wi9-4U-xMF"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="capacitySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HXH-Kr-LNF"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kapasite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c48-LM-01M">
+                                <rect key="frame" x="20" y="415.5" width="75" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGI-M3-kXr">
+                                <rect key="frame" x="80" y="522" width="254" height="41"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Devam Et">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSM-T9-DeI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iCV-h0-rK9" secondAttribute="trailing" constant="20" id="1C5-Fy-f61"/>
+                            <constraint firstItem="uFL-dR-fbl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1i8-TT-ddh"/>
+                            <constraint firstItem="FkG-47-Jod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Hk-uO-zvI"/>
+                            <constraint firstItem="c48-LM-01M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="76H-BC-GSK"/>
+                            <constraint firstItem="FkG-47-Jod" firstAttribute="top" secondItem="Vim-3i-Qgv" secondAttribute="bottom" constant="40" id="7PL-mJ-dhO"/>
+                            <constraint firstItem="uFL-dR-fbl" firstAttribute="top" secondItem="FkG-47-Jod" secondAttribute="bottom" constant="8" id="8RP-Xv-iHu"/>
+                            <constraint firstItem="Vim-3i-Qgv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9ej-Gs-yFY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uFL-dR-fbl" secondAttribute="trailing" constant="20" id="DfC-HM-QBm"/>
+                            <constraint firstItem="kIJ-1j-RtX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="K7n-bG-IJi"/>
+                            <constraint firstItem="tqp-ZX-iEf" firstAttribute="top" secondItem="jyF-Fz-GSs" secondAttribute="bottom" constant="40" id="Mvq-oB-rOD"/>
+                            <constraint firstItem="kIJ-1j-RtX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEq-Rx-5PJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jyF-Fz-GSs" secondAttribute="trailing" constant="20" id="T2S-CO-ssA"/>
+                            <constraint firstItem="iCV-h0-rK9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZDY-mR-JjW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGI-M3-kXr" secondAttribute="trailing" constant="80" id="aD9-V1-5bL"/>
+                            <constraint firstItem="jyF-Fz-GSs" firstAttribute="top" secondItem="V2p-yk-FrM" secondAttribute="bottom" constant="40" id="bD3-NM-K4h"/>
+                            <constraint firstItem="VGI-M3-kXr" firstAttribute="top" secondItem="iCV-h0-rK9" secondAttribute="bottom" constant="50" id="dpj-eZ-7ba"/>
+                            <constraint firstItem="V2p-yk-FrM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fKF-Mh-eLJ"/>
+                            <constraint firstItem="jyF-Fz-GSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gof-ub-0pM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vim-3i-Qgv" secondAttribute="trailing" constant="20" id="l6E-PH-8jp"/>
+                            <constraint firstItem="V2p-yk-FrM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="mTp-Xm-gr9"/>
+                            <constraint firstItem="VGI-M3-kXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="nQq-sz-hV2"/>
+                            <constraint firstItem="V2p-yk-FrM" firstAttribute="top" secondItem="kIJ-1j-RtX" secondAttribute="bottom" constant="8" id="qQ3-ZE-rq5"/>
+                            <constraint firstItem="c48-LM-01M" firstAttribute="top" secondItem="uFL-dR-fbl" secondAttribute="bottom" constant="40" id="tX8-wR-adI"/>
+                            <constraint firstItem="tqp-ZX-iEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vf1-uq-pZY"/>
+                            <constraint firstItem="Vim-3i-Qgv" firstAttribute="top" secondItem="tqp-ZX-iEf" secondAttribute="bottom" constant="8" id="w9D-LL-iEr"/>
+                            <constraint firstItem="iCV-h0-rK9" firstAttribute="top" secondItem="c48-LM-01M" secondAttribute="bottom" constant="8" id="y22-dN-4nO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="capacitySlider" destination="iCV-h0-rK9" id="F9I-gr-jTS"/>
+                        <outlet property="continueButton" destination="VGI-M3-kXr" id="ZrW-y9-E1p"/>
+                        <outlet property="durabilitySlider" destination="Vim-3i-Qgv" id="UfZ-Y9-z8e"/>
+                        <outlet property="pointLabel" destination="XD7-nU-W8u" id="gJV-LA-3qx"/>
+                        <outlet property="rocketNameTextField" destination="jyF-Fz-GSs" id="Xc8-jB-HcG"/>
+                        <outlet property="speedSlider" destination="uFL-dR-fbl" id="dXD-jL-H5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

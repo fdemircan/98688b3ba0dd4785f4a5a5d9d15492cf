@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Dağıtılacak Puan :"; ObjectID = "4aI-dz-q2c"; */
+"4aI-dz-q2c.text" = "Points to be distributed :";
+
+/* Class = "UILabel"; text = "Hız"; ObjectID = "FkG-47-Jod"; */
+"FkG-47-Jod.text" = "Speed";
+
+/* Class = "UIButton"; normalTitle = "Devam Et"; ObjectID = "VGI-M3-kXr"; */
+"VGI-M3-kXr.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "XD7-nU-W8u"; */
+"XD7-nU-W8u.text" = "15";
+
+/* Class = "UILabel"; text = "Kapasite"; ObjectID = "c48-LM-01M"; */
+"c48-LM-01M.text" = "Capacity";
+
+/* Class = "UITextField"; placeholder = "Uzay Aracı Adı"; ObjectID = "jyF-Fz-GSs"; */
+"jyF-Fz-GSs.placeholder" = "Spacecraft Name";
+
+/* Class = "UILabel"; text = "Dayanıklılık"; ObjectID = "tqp-ZX-iEf"; */
+"tqp-ZX-iEf.text" = "Durability";

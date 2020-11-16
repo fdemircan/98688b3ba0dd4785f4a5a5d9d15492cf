@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  UzayTeslimatiChallenge
+
+  Created by Fetiye Demircan on 14.11.2020.
+  Copyright © 2020 Fetiye Demircan. All rights reserved.
+*/
+
+"home_title" = "Ana Sayfa";
+"station_title" = "İstasyon";
+"favorites_title" = "Favoriler";
+
+"accept" = "Tamam";
+"warning" = "Uyarı";
+"create_spacecraft_alert" = "Dağıtılacak puanın toplamı 15'i aşmayacak şekilde seçiniz.";
+
+"ws_error" = "Hata";
+"ws_success" = "Başarılı";

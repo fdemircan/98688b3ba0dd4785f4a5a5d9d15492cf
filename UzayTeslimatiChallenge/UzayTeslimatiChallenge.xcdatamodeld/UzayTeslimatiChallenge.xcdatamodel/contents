@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BaseEntity" representedClassName=".BaseEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="insertedEntites" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InsertedEntities" inverseName="insertedEntity" inverseEntity="InsertedEntities"/>
+    </entity>
+    <entity name="Favorite" representedClassName=".Favorite" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="eus" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stationName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InsertedEntities" representedClassName=".InsertedEntities" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="entityId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="insertedEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BaseEntity" inverseName="insertedEntites" inverseEntity="BaseEntity"/>
+    </entity>
+    <entity name="SpaceCraft" representedClassName=".SpaceCraft" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="durability" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Station" representedClassName=".Station" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="coordinateX" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="coordinateY" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSelect" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isTravelled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="need" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="stock" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UpdateEntity" representedClassName=".UpdateEntity" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="tableName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="BaseEntity" positionX="-54" positionY="18" width="128" height="73"/>
+        <element name="Favorite" positionX="-36" positionY="72" width="128" height="73"/>
+        <element name="InsertedEntities" positionX="-36" positionY="36" width="128" height="88"/>
+        <element name="SpaceCraft" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Station" positionX="-36" positionY="36" width="128" height="178"/>
+        <element name="UpdateEntity" positionX="-18" positionY="63" width="128" height="58"/>
+    </elements>
+</model>

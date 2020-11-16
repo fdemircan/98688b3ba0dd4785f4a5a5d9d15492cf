@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesViewController" customModule="UzayTeslimatiChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="boX-8n-Zdm" id="WxD-Fi-TzM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoriler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-13-1Da">
+                    <rect key="frame" x="168.5" y="56" width="77.5" height="28.5"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRz-K6-OO1">
+                    <rect key="frame" x="20" y="96.5" width="374" height="2"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="9lW-Ib-FnX"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="boX-8n-Zdm">
+                    <rect key="frame" x="0.0" y="118.5" width="414" height="743.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PFb-2Y-cPA">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sF1-Ot-J82"/>
+                        <outlet property="delegate" destination="-1" id="ztd-MV-tUQ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="sRz-K6-OO1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3I6-5V-YVm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="boX-8n-Zdm" secondAttribute="bottom" id="OV1-4p-aAr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="boX-8n-Zdm" secondAttribute="trailing" id="R4f-Qq-h5q"/>
+                <constraint firstItem="UmF-13-1Da" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SaA-Xz-dvP"/>
+                <constraint firstItem="UmF-13-1Da" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="ZPn-WR-A1w"/>
+                <constraint firstItem="boX-8n-Zdm" firstAttribute="top" secondItem="sRz-K6-OO1" secondAttribute="bottom" constant="20" id="bkg-5U-CRC"/>
+                <constraint firstItem="boX-8n-Zdm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gmv-Oq-csy"/>
+                <constraint firstItem="sRz-K6-OO1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lQE-r9-rMl"/>
+                <constraint firstAttribute="trailing" secondItem="sRz-K6-OO1" secondAttribute="trailing" constant="20" id="mKo-MB-caS"/>
+                <constraint firstItem="sRz-K6-OO1" firstAttribute="top" secondItem="UmF-13-1Da" secondAttribute="bottom" constant="12" id="xo3-mk-51x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="123"/>
+        </view>
+    </objects>
+</document>
